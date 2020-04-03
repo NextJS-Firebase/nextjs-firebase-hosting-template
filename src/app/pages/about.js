@@ -1,8 +1,11 @@
-import * as React from 'react'
-import App from '../components/App'
+import React from "react";
+import App from "../components/App";
+import withAuth from "../components/withAuth";
 
-export default () => (
+const About = () => (
   <App>
-    <p>About Page</p>
+    <p>Next.js About Page</p>
   </App>
-)
+);
+
+export default withAuth(About);
